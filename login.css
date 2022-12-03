@@ -7,6 +7,7 @@
   body {
     width: 100%;
     height: 100vh;
+    overflow: hidden;
   }
 
   .main-container {
@@ -69,9 +70,26 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
   }
 
-  @media screen and (min-width:600px) {
+
+  @media screen and (min-width:600px) and (max-width: 991px) {
     body {
-        background-color: darkcyan;
+        display: flex;
+        overflow: scroll;
+    }
+    .main-container {
+        width: 100%; 
+        margin: auto;
+        background-image: radial-gradient(circle at 30% -25%, darkorange 40%,  rgb(15, 12, 33) 30%),  url("img.png");
+    }
+    #imgContainer {
+        margin-top: 80px;
+        margin-bottom: 40px;
+        margin-left: 65%;
+      }
+  }
+
+  @media screen and (min-width:991px) {
+    body {
         display: flex;
         overflow: hidden;
     }
