@@ -6,8 +6,8 @@
 
   body {
     width: 100%;
-    height: 100vh;
-    overflow: hidden;
+    height: 100%;
+    overflow: ;
   }
 
   .main-container {
@@ -74,7 +74,7 @@
   @media screen and (min-width:600px) and (max-width: 991px) {
     body {
         display: flex;
-        overflow: scroll;
+        overflow: ;
     }
     .main-container {
         width: 100%; 
@@ -91,7 +91,7 @@
   @media screen and (min-width:991px) {
     body {
         display: flex;
-        overflow: hidden;
+        overflow: ;
     }
     .main-container {
         width: 30%; 
