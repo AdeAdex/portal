@@ -21,10 +21,10 @@
         rgba(255, 255, 255, 0.5) 35px, rgb(14, 10, 34)
         rgba(255, 255, 255, 0.5) 70px); */
     /* background-color: rgb(15, 12, 33); */
-    background-image: radial-gradient(circle at 30% -20%, darkorange 35%,  rgb(15, 12, 33) 30%),  url("img.png");
+    background-image: radial-gradient(circle at 20% -25%, darkorange 35%,  rgb(15, 12, 33) 35%),  url("3.png");
     background-color: rgb(10, 9, 22);
     transition: background-color 1ms;
-    background-position: center;
+    background-position: 68% 40%;
     background-repeat: no-repeat;
     background-blend-mode: exclusion;
     width: 100%;
@@ -57,13 +57,14 @@
     position: relative;
     z-index: 2;
     cursor: pointer;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 70%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 60%;
+    object-fit: cover;
   }
 
 
-  h1 {
+  #h1 {
     position: relative;
     width: 100%;
     display: flex;
@@ -98,11 +99,13 @@
     }
     .main-container {
         width: 50%;
+        background-position: 68% 60%;
         margin: auto;
+        background-image: radial-gradient(circle at 30% -35%, darkorange 45%,  rgb(15, 12, 33) 30%),  url("img.png");
     }
     #imgContainer {
-        margin-top: 80px;
-        margin-bottom: 40px;
+        margin-top: 100px;
+        margin-bottom: 80px;
         margin-left: 65%;
       }
   }
@@ -121,20 +124,14 @@
     background-color: inherit;
     line-height: 40px;
     box-shadow: inset 0px 0px 2px gray;
+    background-image: url("lock-icon.png");
+	  background-size: 28px;
+    background-repeat: no-repeat;
+    background-position: 95%;
   }
 
   .login-input:first-child {
-    background-image: url("user1.png");
-	  background-size: 28px;
-    background-repeat: no-repeat;
-    background-position: right;
-  }
-
-  .login-input:last-child {
-    background-image: url("1.png");
-	  background-size: 28px;
-    background-repeat: no-repeat;
-    background-position: right;;
+    background-image: url("user-icon.png");
   }
 
  .login-input:focus {
@@ -172,10 +169,33 @@
     cursor: pointer;
   }
 
-  h3 {
+  #h3 {
     color: white;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
+  }
+
+  #fingerprintBtn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: blue;
+    color: white;
+    font-size: 30px;
+    display: block;
+    /* margin: 20px auto 0px auto; */
+  }
+
+  #fingerprintBtnInModal {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: blue;
+    color: white;
+    font-size: 60px;
+    display: block;
+    margin: auto;
+    border: 5px solid red;
   }
 
   .social-icons {
@@ -190,12 +210,16 @@
     padding: 0px 0px;
     text-align: center;
     border-radius: 50%;
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
   .fa-facebook {
     color: #3b5998;
     background-color: white;
+  }
+
+  .fa-linkedin-in {
+    color: #0072b1;
   }
 
   .fa-google {
