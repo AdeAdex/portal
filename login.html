@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link href="fontawesome-free-6.1.1-web/css/all.min.css" rel="stylesheet">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <input type="image" src="1.png" id="imgContainer"></input>
+                <h1 id="h1">welcome <span>back!</span></h1>
+                <!-- <form action=""> -->
+                    <input type="text"  class="login-input" placeholder="Enter your Username / Email" id="email">
+                    <input type="password" class="login-input" placeholder="Enter your Password" id="pass">
+                    <div class="check">
+                        <span><input type="checkbox" id="checkBox"> Remember Me</span>
+                        <a href="" id="forgotPass">Forgot password</a>
+                    </div>
+                    <button id="loginBtn" onclick="signIn()">Login</button>
+                    <h3 id="h3">or log in with</h3>
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog modal-sm modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Put your finger for 5 seconds for login</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h3 id="loading"></h3>
+                                    <button id="fingerprintBtnInModal"><i class="fas fa-fingerprint" onclick="fingerprint()"></i></button>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-icons">
+                        <a href="www.facebook.com" class="icon-links"><i class="fab fa-facebook"></i></a>
+                        <a href="www.facebook.com" class="icon-links"><i class="fab fa-linkedin-in"></i></a>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal"  id="fingerprintBtn">
+                            <i class="fas fa-fingerprint"></i>
+                        </button>
+                        <a href="www.google.com" class="icon-links"><i class="fab fa-google"></i></a>
+                        <a href="www.twitter.com" class="icon-links"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <div class="sign-up-container"><span>Not on Adex yet?</span> <a href="">Sign Up</a></div>
+                <!-- </form> -->
+        </div>
+    </div>
+    <script src="login.js"></script>
+    <script src="./bootstrap.js"></script>
+    <script src="./bootstrap.bundle.js"></script>
+    <script src="./bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -195,7 +195,10 @@
     font-size: 60px;
     display: block;
     margin: auto;
-    border: 5px solid red;
+    transition: all 1s;
+    transform: rotate(360deg);
+    /* border: 8px solid transparent;
+    border-image: url("border2.png") 100 stretch; */
   }
 
   .social-icons {

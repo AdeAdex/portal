@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="fontawesome-free-6.1.1-web/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="signUpPortal.css">
+    <title>Sign Up Portal</title>
+</head>
+<body>
+  <div class="main-container">
+    <div class="sign-up-form">
+      <h1 class="">registration form</h1>
+      <!-- <form class="row g-3 needs-validation" id="fm" novalidate> -->
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">First name</label>
+          <input type="text" class="form-control" id="firstName" value="" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="lastName" value="" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustomUsername" class="form-label">Username</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <input type="text" class="form-control" id="userName" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+              Please choose a username.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom04" class="form-label">Country</label>
+          <select class="form-select" id="countryOption" required>
+            <option selected disabled value="">Choose...</option>
+            <option>Nigeria</option>
+            <option>United State of America</option>
+            <option>United Kingdom</option>
+            <option>Canada</option>
+            <option>Germany</option>
+            <option>Australia</option>
+            <option>France</option>
+            <option>Switzerland</option>
+            <option>Japan</option>
+          </select>
+          <div class="invalid-feedback">
+            Please select a valid country.
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom04" class="form-label">State</label>
+          <select class="form-select" id="stateOption" required>
+            <option selected disabled value="">Choose...</option>
+            <option>Oyo State</option>
+            <option>Osun State</option>
+            <option>Lagos State</option>
+            <option>Akwa-Ibom State</option>
+            <option>Kano State</option>
+            <option>Ogun State</option>
+            <option>Port-harcourt State</option>
+          </select>
+          <div class="invalid-feedback">
+            Please select a valid state.
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom05" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" required>
+          <div class="invalid-feedback">
+            Please provide a valid email.
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom05" class="form-label">Phone Number</label>
+          <input type="tel" class="form-control" id="phoneNumber" required>
+          <div class="invalid-feedback">
+            Please provide a valid phone number.
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom05" class="form-label">Date of Birth</label>
+          <input type="date" class="form-control" id="dateOfBirth" required>
+          <div class="invalid-feedback">
+            Please provide a valid date of birth.
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom05" class="form-label">Gender</label>
+          <div class="col3">
+            <div class="options-div">
+              <label for="male" class="gender-option"> Male:
+                <input type="radio" name="genderinpt" value="Male" checked="checked" id="genderOption">
+              </label>
+              <label for="female" class="gender-option"> Female:
+                <input type="radio" name="genderinpt" value="Female" id="genderOption">
+              </label>
+            </div>
+          </div>
+          <div class="invalid-feedback">
+            Please select a valid gender.
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom05" class="form-label">Password</label>
+          <input type="password" class="form-control" id="pass" required>
+          <div class="invalid-feedback">
+            Please provide a valid password.
+          </div>
+        </div>
+        <div class="col-md-4" id="signUpCheck">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              Agree to terms and conditions
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" >
+          <button class="btn btn-primary" type="submit" onclick="signUp()">Create Account</button>
+        </div>
+      <!-- </form> -->
+    </div>
+  </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <div class="main-container">
+    <h1 class="">registration form</h1>
+    <form class="row g-3 needs-validation" id="fm" novalidate>
+      <div class="col-md-4">
+        <label for="validationCustom01" class="form-label">First name</label>
+        <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustom02" class="form-label">Last name</label>
+        <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustomUsername" class="form-label">Username</label>
+        <div class="input-group has-validation">
+          <span class="input-group-text" id="inputGroupPrepend">@</span>
+          <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+          <div class="invalid-feedback">
+            Please choose a username.
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustom04" class="form-label">Country</label>
+        <select class="form-select" id="validationCustom04" required>
+          <option selected disabled value="">Choose...</option>
+          <option>Nigeria</option>
+          <option>United State of America</option>
+          <option>United Kingdom</option>
+          <option>Canada</option>
+          <option>Germany</option>
+          <option>Australia</option>
+          <option>France</option>
+          <option>Switzerland</option>
+          <option>Japan</option>
+        </select>
+        <div class="invalid-feedback">
+          Please select a valid country.
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustom04" class="form-label">State</label>
+        <select class="form-select" id="validationCustom04" required>
+          <option selected disabled value="">Choose...</option>
+          <option>Oyo State</option>
+          <option>Osun State</option>
+          <option>Lagos State</option>
+          <option>Akwa-Ibom State</option>
+          <option>Kano State</option>
+          <option>Ogun State</option>
+          <option>Port-harcourt State</option>
+        </select>
+        <div class="invalid-feedback">
+          Please select a valid state.
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustom05" class="form-label">Email</label>
+        <input type="email" class="form-control" id="validationCustom05" required>
+        <div class="invalid-feedback">
+          Please provide a valid email.
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustom05" class="form-label">Phone Number</label>
+        <input type="tel" class="form-control" id="validationCustom05" required>
+        <div class="invalid-feedback">
+          Please provide a valid phone number.
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustom05" class="form-label">Gender</label>
+        <div class="col-md-3">
+          <label for="male" class="genderop1"> Male:
+            <input type="radio" name="genderinpt" value="Male" checked="checked">
+          </label>
+          <label for="female" class="genderop2"> Female:
+            <input type="radio" name="genderinpt" value="Female">
+          </label>
+        </div>
+        <div class="invalid-feedback">
+          Please select a valid gender.
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustom05" class="form-label">Date of Birth</label>
+        <input type="date" class="form-control" id="validationCustom05" required>
+        <div class="invalid-feedback">
+          Please provide a valid date of birth.
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustom05" class="form-label">Password</label>
+        <input type="tel" class="form-control" id="validationCustom05" required>
+        <div class="invalid-feedback">
+          Please provide a valid password.
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+          <label class="form-check-label" for="invalidCheck">
+            Agree to terms and conditions
+          </label>
+          <div class="invalid-feedback">
+            You must agree before submitting.
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <button class="btn btn-primary" type="submit">Create Account</button>
+      </div>
+    </form>
+  </div>-->
+      
+      
+      <script src="signUpPortal.js"></script>
+      <script src="./bootstrap.js"></script>
+      <script src="./bootstrap.bundle.js"></script>
+      <script src="./bootstrap.bundle.min.js"></script>
+</body>
+</html>
