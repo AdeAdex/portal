@@ -4,7 +4,7 @@ function signIn() {
     var userPassword = pass.value;
     var found = false
     for (let index = 0; index < allUsers.length; index++) {
-        if (allUsers[index].email == userEmail && allUsers[index].password == userPassword) {
+        if ((allUsers[index].email || allUsers[index].username == userEmail) && allUsers[index].password == userPassword) {
             // localStorage.setItem('currentUserIndex', index)
             found = true;
             break;
